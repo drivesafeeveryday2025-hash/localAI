@@ -1,0 +1,105 @@
+# ==============================================================================
+# STANLEY AI PLATFORM - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Virtual Environments & Python Packages
+# ------------------------------------------------------------------------------
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+dist/
+*.egg-info/
+
+# ------------------------------------------------------------------------------
+# 2. Python Bytecode, Caches & Compiles
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ------------------------------------------------------------------------------
+# 3. Vector Database & Local Data Storage
+# (ChromaDB vectors and SQLite are generated on-demand via `python ingest.py`)
+# ------------------------------------------------------------------------------
+chroma_langchain_db/
+*.sqlite
+*.sqlite3
+*.db
+
+# ------------------------------------------------------------------------------
+# 4. Sensitive Data, Secrets, Keys & Credentials (NEVER COMMIT)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.crt
+*.cert
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+*token*
+*secret*.json
+*credentials*.json
+client_secret*.json
+service_account*.json
+
+# ------------------------------------------------------------------------------
+# 5. Logs, Diagnostics & Temp Files
+# ------------------------------------------------------------------------------
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# 6. IDEs & Operating System Artifacts
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ------------------------------------------------------------------------------
+# 7. Internal Documents & Knowledge Base (CONFIDENTIAL - NEVER UPLOAD)
+# Strict protection: Blocks all documents, subdirectories, and case variations
+# ------------------------------------------------------------------------------
+resource/
+resource/**
+[rR]esource/
+[rR]esource/**
+data/
+data/**
+
+# ------------------------------------------------------------------------------
+# 8. Internal Planning & Architecture Roadmaps (CONFIDENTIAL - NEVER UPLOAD)
+# ------------------------------------------------------------------------------
+plan/
+plan/**
+[pP]lan/
+[pP]lan/**
+
+
+
